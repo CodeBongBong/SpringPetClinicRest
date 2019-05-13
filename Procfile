@@ -1,1 +1,1 @@
-web: java -cp target/classes:target/dependency/* -war target/spring-petclinic-1.5.2.war -Dserver.port=$PORT
+web: java $JAVA_OPTS -Dserver.port=$PORT -jar target/*.war 
